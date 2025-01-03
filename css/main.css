@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-primary: #1dbab4;
+    --btn-secondary: #f3f4f6;
+    --border-secondary: #00a676;
+    --text: #f3f4f6;
+    --text-secondary: #2F3648;
+}
+
+html, body {
+    background-color: #121a2f;
+    color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "DM Sans", serif !important;
+    color: var(--text) !important;
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+.navbar-brand {
+    color: var(--text) !important;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary)!important;
+    border: none !important;
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary) !important;
+    border: var(--border-secondary);
+    color: #1e1e1e !important;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1dbab4, #35d4c9);
+    border-radius: 15px;
+    padding: 50px 20px;
+    min-height: 75vh;
+}
+
+.rating-badge {
+    color: #1e1e1e;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+
+.search-bar .form-control {
+    border-radius: 30px 0 0 30px;
+}
+
+.search-bar .btn {
+    border-radius: 0 30px 30px 0;
+}
